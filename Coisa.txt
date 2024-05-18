@@ -1,0 +1,25 @@
+cur.execute("""CREATE TABLE Loja_Itens(id INTEGER PRIMARY key AUTOINCREMENT,
+#             nome TEXT,
+#             preço REAL,
+#             foto BLOB
+#             data INTEGER,
+#             ativo BOOLEAN,
+#             avaliation NULL,
+#             description TEXT
+#             )""")
+# con.commit()
+
+con = sqlite3.connect("Conteudos.db")
+cur = con.cursor()
+cur.execute("""CREATE TABLE Carrinho(id INTEGER PRIMARY key AUTOINCREMENT,
+            nome TEXT,
+            preço REAL,
+            foto BLOB
+            )""")
+con.commit()
+
+Coisas que faltam:
+Botão de Remover X 
+Botão de Editar X
+Botão de Carrinho e Comprar 
+Pesquisar X

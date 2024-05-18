@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <input type="text" id="Search" placeholder="Buscar Itens">
+    <button id="Adds">Adicionar</button>
+    <div id="Input" style="display: none;">
+        <input type="text" id="titulo" placeholder="Titulo do Item">
+        <input type="number" id="preco" placeholder="Preço do Item">
+        <input type="text" id="img" placeholder="Url do Item">
+        <label for="Yes">Yes</label>
+        <input type="radio" name="Choice" id="Yes">
+        <label for="No">No</label>
+        <input type="radio" name="Choice" id="No" checked>
+        <textarea id="description" placeholder="Description do Item"></textarea>
+        <button id="Click" onclick="Clickar()">Salvar</button>
+        <button id="Drop" onclick="DROPALL()">DROP ALL</button>
+    </div>
+    <a href="/Carrinho">
+        <div id="Comprar">
+            <img src="https://i.pinimg.com/736x/1a/35/fa/1a35fa268846dab61c96bae90007bdc5.jpg" alt="">
+            <h6>Carrinho</h6>
+        </div>
+    </a>
+    <button id="Editando" style="display: none;">Edit</button>
+    <div id="Conteudo"></div>
+</body>
+<script src="../static/script.js"></script>
+</html>
